@@ -1,0 +1,19 @@
+<p>list-to do</p>
+
+<!-- Ejemplos de interpolacion -->
+<div>His name is {{ name }}</div>
+<div>His lastname is {{ lastname }}</div>
+<div>His age is {{ age }}</div>
+
+<!-- De esta forma se agrega una variable a un elemento HTML -->
+<div (keyup)="(0)"><input #input /> {{ input.value }}</div>
+
+<!-- Property binding, permite manejar las propiedades de los elementos html -->
+<button [disabled]="btn_disable">Add new Tasks</button>
+
+<!-- Event binding, se hace un llamado a una funcion cuando se realiza un evento en el elemento html -->
+<div>
+  <button (click)="addTask()">New Tasl</button>
+  <p>{{ message }}</p>
+</div>
+<h4>Tasks</h4>
