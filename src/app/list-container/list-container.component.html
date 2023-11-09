@@ -17,7 +17,14 @@
   <p>{{ message }}</p>
 </div>
 
-<label for="titleTask">Title Task</label>
-<input type="text" id="titleTask" (input)="changeTitle($event)" />
-{{ title }}
+<div>
+  <label for="titleTask">Title Task</label>
+  <input type="text" id="titleTask" (input)="changeTitle($event)" />
+</div>
+
+<!-- Two way binding, se debe tener agregado FormsModule en app.module y utilizar ngModel -->
+<div>
+  <input type="text" [(ngModel)]="title" />
+</div>
+<div>{{ title }}</div>
 <h4>Tasks</h4>
