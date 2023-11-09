@@ -16,4 +16,8 @@
   <button (click)="addTask()">New Tasl</button>
   <p>{{ message }}</p>
 </div>
+
+<label for="titleTask">Title Task</label>
+<input type="text" id="titleTask" (input)="changeTitle($event)" />
+{{ title }}
 <h4>Tasks</h4>
