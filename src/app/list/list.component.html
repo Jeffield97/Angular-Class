@@ -1,0 +1,11 @@
+<h1 class="text-2xl text-center">{{ title }}</h1>
+<div>
+  <ul>
+    <li
+      class="list-item shadow-md border gap-y-3 my-2 w-[200px]"
+      *ngFor="let person of persons"
+    >
+      {{ person.name }}
+    </li>
+  </ul>
+</div>

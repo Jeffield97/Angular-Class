@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { ListContainerComponent } from './list-container/list-container.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { FormsModule } from '@angular/forms';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListContainerComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
