@@ -31,3 +31,18 @@
 
 <!-- Calculadora -->
 <app-calculator />
+
+<!-- Condicional con ngIf -->
+<button
+  *ngIf="showing; else hideButton"
+  class="rounded-lg p-2 border"
+  (click)="changeShowing()"
+>
+  Ocultar mensaje
+</button>
+<ng-template #hideButton
+  ><button (click)="changeShowing()" #hideButton class="rounded-lg p-2 border">
+    Mostrar mensaje
+  </button>
+</ng-template>
+<div *ngIf="showing">Im showing because it's true</div>

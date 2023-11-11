@@ -11,13 +11,18 @@ export class ListContainerComponent {
   lastname: string = "Fullbuster"
   age: number = 26
   btn_disable: boolean = true
-  message = "Any person was be added"
-  title="Engineer"
+  message:string = "Any person was be added"
+  title:string = "Engineer"
+  showing:boolean = false
   //Functions
   addTask():void {
     this.message= "Task added successfully"
   }
   changeTitle(e:Event): void{
     this.title=(<HTMLInputElement>e.target).value
+  }
+  changeShowing(): void{
+    console.log("changing to ",this.showing)
+    this.showing=!this.showing
   }
 }
