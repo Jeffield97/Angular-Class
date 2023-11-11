@@ -14,4 +14,13 @@ export class ListComponent {
     new Person('Sheffield', 'Leriat', 24),
     new Person('Vale', 'Myers', 18),
   ];
+  inputName: string = '';
+  inputLastname: string = '';
+  inputAge: number = 0;
+
+  //Functions
+  addPerson(): void {
+    let person = new Person(this.inputName, this.inputLastname, this.inputAge);
+    this.persons.push(person);
+  }
 }
