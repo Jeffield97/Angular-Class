@@ -7,6 +7,7 @@ import { ListContainerComponent } from './list-container/list-container.componen
 import { CalculatorComponent } from './calculator/calculator.component';
 import { FormsModule } from '@angular/forms';
 import { ListComponent } from './list/list.component';
+import { PersonComponent } from './person/person.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ListComponent } from './list/list.component';
     ListContainerComponent,
     CalculatorComponent,
     ListComponent,
+    PersonComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

@@ -40,13 +40,10 @@
 </div>
 <div class="mt-20">
   <h3>Listado</h3>
-  <ul>
-    <li
-      class="list-item shadow-md border gap-y-3 my-2 w-[200px]"
-      *ngFor="let person of persons"
-    >
-      {{ person.name }}
-      <button class="border p-1 bg-slate-300">Eliminar</button>
-    </li>
-  </ul>
+  <app-person
+    *ngFor="let person of persons; let i = index"
+    [person]="person"
+    [index]="i"
+  >
+  </app-person>
 </div>
